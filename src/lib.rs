@@ -1,14 +1,4 @@
-struct Length<B, V >{
-    BaseUnit: T,
-    Value: 
-}
-#[cfg(test)]
-mod tests {
-    use super::*;
+#![feature(adt_const_params)]
 
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+pub mod area;
+pub mod length;
